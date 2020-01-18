@@ -1,6 +1,6 @@
 Name:           perl-YAML-Syck
 Version:        1.27
-Release:        1%{?dist}
+Release:        3%{?dist}
 Summary:        Fast, lightweight YAML loader and dumper
 License:        BSD and MIT
 Group:          Development/Libraries
@@ -71,6 +71,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/YAML::Syck.3pm*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.27-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.27-2
+- Mass rebuild 2013-12-27
+
 * Tue May 21 2013 Paul Howarth <paul@city-fan.org> 1.27-1
 - Update to 1.27
   - Fix for hash randomization in yaml-alias.t on perl 5.18.0 (CPAN RT#84882,
